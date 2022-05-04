@@ -12,7 +12,7 @@ class Bot:
         return self.bot.send_message(chat_id = self.chat_id, text = text)
     
     def send_image(self, path):
-        with open(path, 'wb') as f:
+        with open(path, 'rb') as f:
             return self.bot.send_photo(chat_id = self.chat_id, photo = f)
     
     def delete_msg(self, msg_id):
