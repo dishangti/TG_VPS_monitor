@@ -30,7 +30,7 @@ with open('./tg_stat_id.txt', 'w') as id:
 	id.write(str(res['message_id']) + '\n')
 	res = bot.send_image('./vnstat_s.png')
 	id.write(str(res['message_id']) + '\n')
-	res = bot.send_image(photo = f)
+	res = bot.send_image('./vnstat_m.png')
 	id.write(str(res['message_id']) + '\n')
 
 os.system('rm -f ./vnstat_m.png')
