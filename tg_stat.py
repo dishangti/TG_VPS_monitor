@@ -28,12 +28,10 @@ hello = servername + '\n节点总流量' + total_traffic + '(' + traffic_method 
 with open('./tg_stat_id.txt', 'w') as id:
 	res = bot.send_text(hello)
 	id.write(str(res['message_id']) + '\n')
-	with open('./vnstat_s.png', 'rb') as f:
-		res = bot.send_photo(photo = f)
-		id.write(str(res['message_id']) + '\n')
-	with open('./vnstat_m.png', 'rb') as f:
-		res = bot.send_photo(photo = f)
-		id.write(str(res['message_id']) + '\n')
+	res = bot.send_image('./vnstat_s.png')
+	id.write(str(res['message_id']) + '\n')
+	res = bot.send_image(photo = f)
+	id.write(str(res['message_id']) + '\n')
 
 os.system('rm -f ./vnstat_m.png')
 os.system('rm -f ./vnstat_s.png')
