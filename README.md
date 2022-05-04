@@ -8,7 +8,7 @@ Debian和Ubuntu可通过以下命令安装：
 
 Python库：python-telegram-bot, psutil
 通过以下命令安装：
-'pip install python-telegram-bot psutil'
+`pip install python-telegram-bot psutil`
 
 ### 配置文件
 配置文件为`settings.json`根据注释填入对应信息即可
