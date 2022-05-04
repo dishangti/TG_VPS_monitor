@@ -20,10 +20,11 @@ Python库：python-telegram-bot, psutil
     "servername": "",       //你想如何称呼你的服务器
     "traffic_method": "",   //节点流量计算方式（单向计算、双向计算等）
     "total_traffic": "",    //每月总流量（800G）
-    "cpu_warn": 75,         //CPU占用率告警阈值
-    "mem_warn": 80,         //内存占用率告警阈值
-    "conn_warn": 1000,      //TCP连接数告警阈值
-    "disk_warn": 1024       //磁盘剩余空间告警阈值(MB)
+
+    "cpu_warn": 75,         //CPU占用率告警阈值，设置为0不进行检测
+    "mem_warn": 80,         //内存占用率告警阈值，设置为0不进行检测
+    "conn_warn": 1000,      //TCP连接数告警阈值，设置为0不进行检测
+    "disk_warn": 1024       //磁盘剩余空间告警阈值(MB)，设置为0不进行检测
 }
 ```
 
