@@ -20,11 +20,13 @@ Python库：python-telegram-bot, psutil
 由于JSON不支持注释，我把注释放在这里
 ```json
 {
-    "bot_token": "",        //Telegram机器人Token
-    "chat_id": "",          //Chat ID (你可以从@getmyid_bot获取)
-    "servername": "",       //你想如何称呼你的服务器
-    "traffic_method": "",   //节点流量计算方式（单向计算、双向计算等）
-    "total_traffic": "",    //每月总流量（800G）
+    "bot_token": "",            //Telegram机器人Token
+    "chat_id": "",              //Chat ID (你可以从@getmyid_bot获取)
+    "servername": "",           //你想如何称呼你的服务器
+
+    "ifce_stat": "",            //需统计的网络接口（你可以从ifconfig获取）
+    "traff_methd_stat": "",     //节点流量计算方式（例如单向计算、双向计算等）
+    "total_traff_stat": "",     //每月总流量（例如800G）
 
     "cpu_warn": 75,         //CPU占用率告警阈值，设置为0不进行检测
     "mem_warn": 80,         //内存占用率告警阈值，设置为0不进行检测
