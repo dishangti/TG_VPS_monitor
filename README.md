@@ -1,5 +1,5 @@
 # TG_VPS_monitor
-VPS性能监控脚本，自动将报告和预警信息自动通过Telegram Bot上传
+VPS性能监控轻量脚本，自动将报告和预警信息自动通过Telegram Bot上传
 
 ### 依赖项
 系统工具：vnstat, vnstati
