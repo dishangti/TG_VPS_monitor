@@ -1,6 +1,5 @@
 {
-    "bot_token_head": "",   //Telegram机器人Token
-    "bot_token_tail": "",   //不知道为什么冒号会出问题，于是请麻烦把冒号前的填到上面，冒号后的填到下面
+    "bot_token": "",        //Telegram机器人Token
     "chat_id": "",          //Chat ID (你可以从@getmyid_bot获取)
     "servername": "",       //你想如何称呼你的服务器
     "traffic_method": "",   //节点流量计算方式（单向计算、双向计算等）

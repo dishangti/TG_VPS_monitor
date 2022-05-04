@@ -6,7 +6,7 @@ class Bot:
         with open(r'./settings.json', 'r') as f:
             settings = json.loads(f.read())
         self.chat_id = settings['chat_id']
-        self.bot = telegram.Bot(token = settings['bot_token_head'] + ':' + settings['bot_token_tail'])
+        self.bot = telegram.Bot(token = settings['bot_token'])
 
     def send_text(self, text):
         return self.bot.send_message(chat_id = self.chat_id, text = text)

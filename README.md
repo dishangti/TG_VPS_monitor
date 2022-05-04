@@ -12,6 +12,20 @@ Python库：python-telegram-bot, psutil
 
 ### 配置文件
 配置文件为`settings.json`根据注释填入对应信息即可
+由于JSON不支持注释，我把注释放在这里
+```json
+{
+    "bot_token": "",        //Telegram机器人Token
+    "chat_id": "",          //Chat ID (你可以从@getmyid_bot获取)
+    "servername": "",       //你想如何称呼你的服务器
+    "traffic_method": "",   //节点流量计算方式（单向计算、双向计算等）
+    "total_traffic": "",    //每月总流量（800G）
+    "cpu_warn": 75,         //CPU占用率告警阈值
+    "mem_warn": 80,         //内存占用率告警阈值
+    "conn_warn": 1000,      //TCP连接数告警阈值
+    "disk_warn": 1024       //磁盘剩余空间告警阈值(MB)
+}
+```
 
 ### 定时执行
 可以通过crontab配置定时执行，其中`tg_stat.py`文件为统计报告，`tg_warn.py`文件为预警报告
