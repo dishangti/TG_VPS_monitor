@@ -3,6 +3,8 @@ from tg_bot import Bot
 import json
 from datetime import datetime
 
+os.chdir(os.path.dirname(__file__))
+
 with open('settings.json', 'r') as f:
 		settings = json.loads(f.read())
 		servername = settings['servername']

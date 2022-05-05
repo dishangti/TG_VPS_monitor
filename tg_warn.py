@@ -5,6 +5,8 @@ import psutil
 import json
 from datetime import datetime
 
+os.chdir(os.path.dirname(__file__))
+
 try:
 	with open('settings.json', 'r') as f:
 		settings = json.loads(f.read())

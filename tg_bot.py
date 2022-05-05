@@ -1,8 +1,10 @@
 import json
+import os
 import telegram
 
 class Bot:
     def __init__(self):
+        os.chdir(os.path.dirname(__file__))
         with open(r'./settings.json', 'r') as f:
             settings = json.loads(f.read())
         self.chat_id = settings['chat_id']
